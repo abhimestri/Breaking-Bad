@@ -1,0 +1,83 @@
+.MainHeaderSection{
+    width: 100%;
+    height: 130vh;
+    margin-bottom: 10px;
+}
+.headerSection{
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: -6%;
+    z-index: -1;
+    box-shadow: 2px 12px 12px rgb(66, 65, 65);
+}
+.HeaderImg{
+    width: 100%;
+    height: 1400px;
+    margin-bottom: 160px;
+}
+.HeaderQuote{
+    color: white;
+    position: relative;
+    left: 58%;
+    top:85%;
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    font-size: 2rem;
+}
+.mainSectionDisplay{
+    width: 90.5%;
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    margin-top: 50px;
+    height: 350px;
+    margin-bottom: 70px;
+    display: flex;
+}
+.cardForImg{
+    margin: 10px 60px 4px 60px;
+}
+.image{
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 3px 12px 17px rgb(66, 65, 65);
+} 
+.cardText{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    top: -35%;
+    left: 1%;
+    color: #fff;
+    transition: ease-out 0.6s;
+    opacity: 0;
+}
+.cardTextHeader{
+    padding: 0;
+    margin: 0;
+    font-weight: 200;
+    font-size: 30px;
+    font-family: fantasy;
+}
+.cardTextSubHeader{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: fantasy;
+}
+.cardTextContent{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: fantasy;
+}
+.cardForImg:hover .cardText{
+    opacity: 1;
+}

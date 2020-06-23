@@ -1,0 +1,8 @@
+.list-elements{
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    left: 63%;
+    top: 0%;
+    width: 200px;
+}

@@ -1,0 +1,12 @@
+.li-item{
+    margin-top: 25px;
+    padding-left: 55px;
+    list-style: none;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+.li-item:hover{
+    color: #ddd4d4;
+    cursor: pointer;
+}
