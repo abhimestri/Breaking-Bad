@@ -3,6 +3,8 @@ import Navbar from './Component/NavigationBar/Navigations'
 import  './App.css';
 import MainHeader from './Container/MainHeader/MainHeader'
 import QuotesSection from './Container/QuotesSection/QuotesSection'
+import MoreCharactersSection from './Container/MoreCharactersSection/MoreCharactersSection'
+import Footer from './Component/Footer/Footer'
 
 class App extends Component {
 
@@ -18,6 +20,8 @@ class App extends Component {
           <div>
             <QuotesSection />
           </div>
+          <MoreCharactersSection/>
+          <Footer/>
         </div>
       );
     }

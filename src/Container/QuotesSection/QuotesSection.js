@@ -58,6 +58,7 @@ class QuotesSection extends Component{
                             <span>~{this.state.Author[30]}</span>
                         </p>
                     </div>
+                    <p className="moreQuotes">see more quotes</p>
                 </div>
             </Aux>
         )

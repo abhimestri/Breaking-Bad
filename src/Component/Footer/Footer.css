@@ -1,0 +1,22 @@
+.footerSection{
+    width: 100%;
+    height: 140px;
+    background-color: #333;
+    margin-top: 20px;
+}
+.footerTitle{
+    padding-top: 50px;
+    margin: 0;
+    padding-right: 0;
+    font-weight: 200;
+    padding-left: 10px;
+    color: #fff;
+}
+.documentation{
+    float: right;
+    padding: 10px;
+    padding-left: 0;
+    font-weight: 300;
+    font-size: 19px;
+    color: #fff;
+}
