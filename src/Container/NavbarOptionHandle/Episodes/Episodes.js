@@ -16,8 +16,7 @@ class Episodes extends Component{
                     this.setState({
                         repeat : false,
                         data : res.data
-                    })
-                    console.log(res.data[0])})
+                    })})
                 .catch(err => console.log(err))
     }
 

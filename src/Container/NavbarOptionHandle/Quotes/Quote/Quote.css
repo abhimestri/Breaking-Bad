@@ -1,0 +1,18 @@
+.EachQuoteCard{
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgb(201, 200, 200);
+    transition: ease-in-out 0.3s;
+    margin: 8vh 25vh 0 25vh;
+}
+.QuoteForEachCard{
+    font-weight: 200;
+    font-size: 27px;
+}
+.AuthorForEachQuote{
+    font-weight: 300;
+    font-size: 17px;
+}
+.EachQuoteCard:hover{
+    box-shadow: 0 0 31px rgb(158, 156, 156);
+}

@@ -2,6 +2,8 @@ import React, {Component}from 'react'
 import './MoreCharactersSection.css'
 import axios from 'axios'
 import Aux from '../../HOC/Aux'
+import {Route} from 'react-router-dom'
+import Characters from '../NavbarOptionHandle/Characters/Charcaters'
 
 class MoreCharactersSection extends Component{
 
@@ -79,10 +81,10 @@ class MoreCharactersSection extends Component{
                         </div>
                     </div>
                     <div className="BtnSection">
-                        <button className="btn btn-outline-dark BtnForMoreCharacters">see more characters</button>
+                        <a href="/Characters" className="btn btn-outline-dark BtnForMoreCharacters">see more characters</a>
                     </div>
-                    {/* <div className="temp"></div> */}
                 </div>
+                <Route path="/Characters" exact component={Characters}/>
             </Aux>
         )
     }

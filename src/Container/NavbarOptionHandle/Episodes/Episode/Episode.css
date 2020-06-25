@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 .EachCardForEpisode{
-    margin: 10vh;
+    margin: 6vh;
    /* box-shadow: inset 0 0 108px #000000; */
    border-radius: 5px;
    box-shadow: 0 0 30px #ccc;
 }
 .Title{
     margin: 13px 0 8px 0;
-    font-size: 43px;
+    font-size: 35px;
     font-weight: 200;
 }
 .SeasonAndEpisode{
@@ -15,9 +16,10 @@
     font-weight: 300;
 }
 .ListOFCharacters{
-    margin-left: -20px;
+    margin-left: -40px;
     font-size: 17px;
     font-weight: 200;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .EachCharacter{
     list-style: none;

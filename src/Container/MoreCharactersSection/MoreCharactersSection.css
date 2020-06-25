@@ -82,6 +82,8 @@
 }
 .BtnForMoreCharacters{
     transition: ease-in-out .5s;
+    color: #000;
+    text-decoration: none;
 }
 .temp{
     width: 100px;
