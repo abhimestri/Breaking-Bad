@@ -122,13 +122,20 @@
         left: 35%;
     }
 }
-@media(max-width:414px){
+@media(max-width:380px){
     .headerSection{
+        width: 100%;
+        top: -10%;
         height: 300px;
     }
     .HeaderImg{
-        width: 50%;
+        width: 100%;
         height: 600px;
+    }
+    .HeaderQuote{
+        font-size: 1.0rem;
+        left: 10%;
+        top:90%;
     }
     .mainSectionDisplay{
         width: 90%;
@@ -137,11 +144,11 @@
         margin-bottom: 0;
     }
     .cardForImg{
-        margin: 10px 10px 4px 8px;
+        margin: 10px 5px 4px 5px;
     }
     .image{
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
     } 
     .cardText{
         top: -15%;

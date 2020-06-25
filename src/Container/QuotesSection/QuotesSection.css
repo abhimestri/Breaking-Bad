@@ -79,20 +79,20 @@
         right: 1em;
     }
 }
-@media(max-width:414px){
+@media(max-width:380px){
     .QuotesSection{
         margin-top: -30vh;
-        margin-left: 1vh;
+        margin-left: 0vh;
     }
     .QuotesSection::before{
-        margin-right: 0;
+        margin-right:0vh;
         top : 70% ;
         left: 1em;
         right: 1em;
     }
     .QuotesSection::after{
-        margin-right:0;
-        bottom: -40em;
+        margin-right:0vh;
+        bottom: -50em;
         left: 1em;
         right: 1em;
     }

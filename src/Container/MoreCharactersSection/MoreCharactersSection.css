@@ -134,6 +134,49 @@
         margin-left: 5vh;
     }
 }
-@media(max-width:414px){
-    
+@media(max-width:380px){
+    .moreCharactersBlock{
+        margin-top: 60vh;
+    }
+    .headerForMoreCharacterSection{
+        margin-left: 6vh;
+    }
+    .moreCharactersSection{
+        margin: 10vh 0 10vh -43vh;
+        display: block;
+    }
+    .BtnSection{
+        margin-top: 100vh;
+        margin-left: 38vh;
+    }
+    .Image{
+        width:220px;
+        height: 220px;
+    }
+    .eachCharacterInMoreSection{
+        width: 180px;
+        height: 180px;
+        margin-bottom: 7vh;
+        margin-left: 55vh;
+    }
+    .BtnSection{
+        margin-top: 55vh;
+        margin-left: 15vh;
+    }
+    .imageDescription{
+        height: 210px;
+        width: 210px;
+        top: -110%;
+        left: 3%;
+    }
+    .Name{
+        font-size: 22px;
+    }
+    .NickName{
+        font-size: 17px;
+    }
+    .Occupation{
+        font-size: 16px;
+    }
 }
+
