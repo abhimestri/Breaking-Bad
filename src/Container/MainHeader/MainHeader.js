@@ -11,9 +11,10 @@ class MainHeader extends Component{
   }
   getDatas = () => {
     axios.get("https://www.breakingbadapi.com/api/quotes")
-            .then(res => {
-                this.setState({headerQuote : res.data[0].quote})
-            })
+        .then(res => {
+            this.setState({headerQuote : res.data[0].quote})
+        })
+        .catch(err => console.log(err))
     axios.get("https://www.breakingbadapi.com/api/characters")
             .then(res =>{
                  this.setState(

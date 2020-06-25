@@ -1,22 +1,29 @@
 .footerSection{
     width: 100%;
-    height: 140px;
-    background-color: #333;
+    height: 100px;
+    background-color: rgb(151, 147, 147);
     margin-top: 20px;
 }
 .footerTitle{
-    padding-top: 50px;
-    margin: 0;
-    padding-right: 0;
+    position: relative;
+    top: 10%;
     font-weight: 200;
     padding-left: 10px;
-    color: #fff;
 }
 .documentation{
     float: right;
-    padding: 10px;
-    padding-left: 0;
+    position: relative;
+    top: -40%;
+    right: 2%;
     font-weight: 300;
-    font-size: 19px;
-    color: #fff;
+    font-size: 23px;
+    padding: 0;
+    cursor: pointer;
+}
+.githublogo{
+    position: relative;
+    top: -55%;
+    margin-left: 191vh;
+    font-size: 40px;
+    cursor: pointer;
 }

@@ -3,7 +3,7 @@ import './Navigation.css'
 
 const Navbar = (props) => {
     return (
-        <li className="li-item">
+        <li className="li-itsem">
             {props.children}
         </li>
     )

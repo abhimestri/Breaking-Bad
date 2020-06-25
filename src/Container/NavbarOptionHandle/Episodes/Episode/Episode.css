@@ -1,0 +1,27 @@
+.EachCardForEpisode{
+    margin: 10vh;
+   /* box-shadow: inset 0 0 108px #000000; */
+   border-radius: 5px;
+   box-shadow: 0 0 30px #ccc;
+}
+.Title{
+    margin: 13px 0 8px 0;
+    font-size: 43px;
+    font-weight: 200;
+}
+.SeasonAndEpisode{
+    margin: 8px 0 9px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+.ListOFCharacters{
+    margin-left: -20px;
+    font-size: 17px;
+    font-weight: 200;
+}
+.EachCharacter{
+    list-style: none;
+}
+.EachCardForEpisode:hover{
+   box-shadow: 0 0 60px #ccc;
+}

@@ -37,8 +37,8 @@
     font-weight: 200;
 }
 .quotesSectionTitle{
-    margin: 20px 10vh 5vh 10vh;
-   text-align: center;
+    margin: 15vh 10vh 5vh 10vh;
+    text-align: center;
     font-size: 40px;
     font-weight: 200;
 }
@@ -47,4 +47,13 @@
     text-align: center;
     color: #333;
     cursor: pointer;
+}
+.moreQuotesLink{
+    color: #333;
+    text-decoration: none;
+}
+.moreQuotesLink:hover{
+    color: rgb(119, 116, 116);
+    cursor: pointer;
+    text-decoration: none;
 }

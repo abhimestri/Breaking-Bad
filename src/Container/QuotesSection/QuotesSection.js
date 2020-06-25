@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './QuotesSection.css'
 import axios from 'axios'
 import Aux from '../../HOC/Aux'
+import {Route} from 'react-router-dom'
+import Quotes from '../NavbarOptionHandle/Quotes/quotes'
 
 class QuotesSection extends Component{
     state = {
@@ -11,12 +13,8 @@ class QuotesSection extends Component{
     }
 
     getQuotes = () => {
-        axios.get("https://www.breakingbadapi.com/api/characters")
-                .then(res => console.log(res))
-                .catch(err => console.log(err))
         axios.get("https://www.breakingbadapi.com/api/quotes")
                 .then(res => {
-                    console.log(res.data)
                     let parsedquotes = res.data.map(entry => {
                         return entry.quote
                     })
@@ -36,7 +34,6 @@ class QuotesSection extends Component{
         if(this.state.repeat){
             this.getQuotes()
         }
-        // console.log(this.state.parsedQuotes)
         return(
             <Aux>
                 <div className="QuotesSection">
@@ -58,8 +55,11 @@ class QuotesSection extends Component{
                             <span>~{this.state.Author[30]}</span>
                         </p>
                     </div>
-                    <p className="moreQuotes">see more quotes</p>
+                    <p className="moreQuotes">
+                        <a className="moreQuotesLink" href="/quotes">see more quotes</a>
+                    </p>
                 </div>
+                <Route path="/quotes" component={Quotes}/>
             </Aux>
         )
     }

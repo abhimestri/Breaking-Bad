@@ -46,7 +46,6 @@ class MoreCharactersSection extends Component{
         if(this.state.repeat){
             this.getData();
         }
-        console.log(this.state.Occupation + "thus")
         return (
             <Aux>
                 <div className="moreCharactersBlock">
@@ -82,6 +81,7 @@ class MoreCharactersSection extends Component{
                     <div className="BtnSection">
                         <button className="btn btn-outline-dark BtnForMoreCharacters">see more characters</button>
                     </div>
+                    {/* <div className="temp"></div> */}
                 </div>
             </Aux>
         )

@@ -1,3 +1,8 @@
+.NavbarSec{
+    position: absolute;
+    left: 52%;
+    top: 2%;
+}
 .list-elements{
     display: flex;
     justify-content: right;
@@ -5,4 +10,21 @@
     left: 63%;
     top: 0%;
     width: 200px;
+    text-decoration: none;
+    color: #000;
+}
+.listEle{
+    list-style: none;
+}
+.li-item{
+    padding: 30px;
+    list-style: none;
+    font-size: 20px;
+    color: #000000;
+}
+.li-item:hover{
+    text-decoration: none;
+    transition: ease-in-out 0.4s;
+    color: #ddd4d4;
+    cursor: pointer;
 }
