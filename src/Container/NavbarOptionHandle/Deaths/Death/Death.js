@@ -4,11 +4,11 @@ import './Death.css'
 const death =(props) => {
     return (
         <div className="cardForEachDeathSection">
-            <h3>death : {props.Deathof}</h3>
-            <p>Cause : {props.Cause}</p>
-            <p>Lastwords : {props.LastWords}</p>
-            <p>Responsible : {props.Responsible}</p>
-            <p>season:{props.Season} Episode:{props.Episode}</p>
+            <h1 className="Death">death : {props.Deathof}</h1>
+            <p className="Cause">Cause : {props.Cause}</p>
+            <p className="Lastwords">Lastwords : {props.LastWords}</p>
+            <p className="Responsible">Responsible : {props.Responsible}</p>
+            <p className="SeasonEpisode">season:{props.Season} Episode:{props.Episode}</p>
         </div>
     )
 }

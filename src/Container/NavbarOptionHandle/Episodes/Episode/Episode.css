@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 .EachCardForEpisode{
     margin: 6vh;
    /* box-shadow: inset 0 0 108px #000000; */
@@ -17,13 +17,14 @@
 }
 .ListOFCharacters{
     margin-left: -40px;
-    font-size: 17px;
-    font-weight: 200;
-    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .EachCharacter{
     list-style: none;
 }
+
 .EachCardForEpisode:hover{
    box-shadow: 0 0 60px #ccc;
 }

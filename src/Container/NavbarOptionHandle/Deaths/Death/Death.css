@@ -1,5 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 .cardForEachDeathSection{
     margin: 6vh;
-   border-radius: 5px;
-   box-shadow: 0 0 30px #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 30px #ccc;
+}
+.Death{
+    font-size: 28px;
+    font-weight: 100;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.Cause{
+    font-size: 22px;
+    font-weight: 200;
+}
+.Lastwords{
+    font-size: 22px;
+    font-weight: 200;
+}
+.Responsible{
+    font-size: 22px;
+    font-weight: 200;
+}
+.SeasonEpisode{
+    font-size: 22px;
+    font-weight: 200;
+}
+.cardForEachDeathSection:hover{
+   box-shadow: 0 0 50px #ccc;
+}
+
+@media(max-width:1024px){
+    .cardForEachDeathSection{
+        margin: 3.5vh;
+      padding: 20px;
+    }
+}
+
+@media(max-width:768px){
+    .cardForEachDeathSection{
+        margin: 3.5vh;
+      padding: 20px;
+    }
 }

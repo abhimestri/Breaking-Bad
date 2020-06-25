@@ -3,7 +3,6 @@ import './RoundUp.css'
 import MainHeader from '../Container/MainHeader/MainHeader'
 import QuotesSection from '../Container/QuotesSection/QuotesSection'
 import MoreCharactersSection from '../Container/MoreCharactersSection/MoreCharactersSection'
-// import Episodes from './NavbarOptionHandle/Episodes/Episodes'
 
 class MainPageSection extends Component{
     render(){
@@ -16,7 +15,6 @@ class MainPageSection extends Component{
                     <QuotesSection />
                 </div>
                   <MoreCharactersSection/>
-                  {/* <Episodes/> */}
             </div>
         )
     }

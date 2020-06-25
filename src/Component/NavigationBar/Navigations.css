@@ -28,3 +28,25 @@
     color: #ddd4d4;
     cursor: pointer;
 }
+
+@media(max-width:1024px){
+    .NavbarSec{
+        left: 39%;
+    }
+    .li-item{
+        padding: 20px;
+    }
+}
+@media(max-width:768px){
+    .NavbarSec{
+        left: 35%;
+    }
+    .li-item{
+        padding: 10px;
+    }
+}
+@media(max-width:414px){
+    .NavbarSec{
+        display: none;
+    }
+}

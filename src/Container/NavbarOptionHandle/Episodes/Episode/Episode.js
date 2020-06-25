@@ -11,7 +11,7 @@ const episode = (props) => {
         <div className="EachCardForEpisode">
             <h2 className="Title">{props.Title}</h2>
             <p className="SeasonAndEpisode">Season : {props.Season} Episode : {props.Episode}</p>
-            <ul className="ListOFCharacters"> characters : {data}</ul>
+            <ul className="ListOFCharacters"> ----Characters----{data}</ul>
         </div>
     )
 }

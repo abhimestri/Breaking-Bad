@@ -4,3 +4,9 @@
     width: 130px;
     height: 130px;
 }
+@media(max-width:414px){
+    .Branding{
+        width: 70px;
+        height: 70px;
+    }
+}

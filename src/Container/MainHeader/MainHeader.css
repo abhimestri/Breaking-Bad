@@ -81,3 +81,78 @@
 .cardForImg:hover .cardText{
     opacity: 1;
 }
+@media(max-width:1024px){
+    .MainHeaderSection{
+        height:130vh ;
+        margin-bottom: 0px;
+    }
+    .mainSectionDisplay{
+        width: 90%;
+        top: 85%;
+        left: 0.5%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .cardForImg{
+        margin: 10px 10px 4px 20px;
+    }
+    .HeaderQuote{
+        font-size: 1.6rem;
+        left: 48%;
+        top:90%;
+    }
+}
+@media(max-width:768px){
+    .headerSection{
+        width: 120vh;
+    }
+    .MainHeaderSection{
+        height:87vh ;
+    }
+    .image{
+        width: 220px;
+        height: 220px;
+    } 
+    .mainSectionDisplay{
+        width: 90%;
+        top: 90%;
+        left: 0.5%;
+    }
+    .HeaderQuote{
+        left: 35%;
+    }
+}
+@media(max-width:414px){
+    .headerSection{
+        height: 300px;
+    }
+    .HeaderImg{
+        width: 50%;
+        height: 600px;
+    }
+    .mainSectionDisplay{
+        width: 90%;
+        top: 40%;
+        left: 0%;
+        margin-bottom: 0;
+    }
+    .cardForImg{
+        margin: 10px 10px 4px 8px;
+    }
+    .image{
+        width: 120px;
+        height: 120px;
+    } 
+    .cardText{
+        top: -15%;
+    }
+    .cardTextHeader{
+        font-size: 15px;
+    }
+    .cardTextSubHeader{
+        font-size: 10px;
+    }
+    .cardTextContent{
+        font-size: 8px;
+    }
+}

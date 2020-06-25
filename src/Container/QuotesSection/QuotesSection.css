@@ -57,3 +57,43 @@
     cursor: pointer;
     text-decoration: none;
 }
+@media(max-width:1024px){
+    .QuotesSection::after{
+        bottom: -63em;
+    }
+}
+@media(max-width:768px){
+    .QuotesSection{
+        margin-top: 60vh;
+        margin-left: 2vh;
+    }
+    .QuotesSection::before{
+        margin-right: 0;
+        left: 1em;
+        right: 1em;
+    }
+    .QuotesSection::after{
+        margin-right:0;
+        bottom: -68em;
+        left: 1em;
+        right: 1em;
+    }
+}
+@media(max-width:414px){
+    .QuotesSection{
+        margin-top: -30vh;
+        margin-left: 1vh;
+    }
+    .QuotesSection::before{
+        margin-right: 0;
+        top : 70% ;
+        left: 1em;
+        right: 1em;
+    }
+    .QuotesSection::after{
+        margin-right:0;
+        bottom: -40em;
+        left: 1em;
+        right: 1em;
+    }
+}

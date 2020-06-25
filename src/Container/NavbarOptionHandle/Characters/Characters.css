@@ -3,3 +3,19 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+
+@media(max-width:1024px){
+    .CardForCharacters{
+        margin-top: 14vh;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 22px;
+    }
+}
+
+@media(max-width:768px){
+    .CardForCharacters{
+        margin-top: 20vh;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 1vh;
+    }
+}

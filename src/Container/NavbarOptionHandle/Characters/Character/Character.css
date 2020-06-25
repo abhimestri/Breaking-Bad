@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 .CardForCharacter{
     width: 350px;
     height: 470px;
@@ -17,25 +17,39 @@
     background-repeat: no-repeat;
 }
 .Names{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 23px;
     margin: 12px 0 2px 0;
     padding: 0;
     color: #000;
 }
 .Nicknames{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     padding: 0;
     margin: 3px 0 2px 0;
     color: #000;
 }
 .Occupations{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     padding: 0;
     margin: 3px 0 2px 0;
     color: #000;
 }
 .CardForCharacter:hover{
     box-shadow: 1px 13px 17px #333;
+}
+
+@media(max-width:768px){
+    .CardForCharacter{
+        width: 300px;
+        height: 420px;
+        margin-left: 40px;
+    }
+    .Images{
+        width: 300px;
+        height: 290px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }

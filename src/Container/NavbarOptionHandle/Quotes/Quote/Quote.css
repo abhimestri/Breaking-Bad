@@ -16,3 +16,13 @@
 .EachQuoteCard:hover{
     box-shadow: 0 0 31px rgb(158, 156, 156);
 }
+@media(max-width:768px){
+    .EachQuoteCard{
+        margin: 8vh 5vh -4vh 5vh;
+    } 
+}
+@media(max-width:1024px){
+    .EachQuoteCard{
+        margin: 8vh 5vh -4vh 5vh;
+    } 
+}
