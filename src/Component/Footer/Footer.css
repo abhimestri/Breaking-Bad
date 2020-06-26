@@ -1,8 +1,8 @@
 .footerSection{
     width: 100%;
-    height: 100px;
+    height: 110px;
     background-color: rgb(151, 147, 147);
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .footerTitle{
     position: relative;
@@ -13,17 +13,42 @@
 .documentation{
     float: right;
     position: relative;
-    top: -40%;
     right: 2%;
     font-weight: 300;
     font-size: 23px;
     padding: 0;
     cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    margin-top: -40px;
+}
+.documentation:hover{
+    color: #000;
+    text-decoration: none;
 }
 .githublogo{
     position: relative;
-    top: -55%;
     margin-left: 191vh;
     font-size: 40px;
     cursor: pointer;
+    color: #000;
+}
+.githublogo:hover{
+    color: #000;
+    text-decoration: none;
+}
+@media(max-width:1024px){
+    .githublogo{
+        margin-left: 131vh;
+    } 
+}
+@media(max-width:769px){
+    .githublogo{
+        margin-left: 98vh;
+    } 
+}
+@media(max-width:380px){
+    .footerSection{
+       display: none;
+    }
 }

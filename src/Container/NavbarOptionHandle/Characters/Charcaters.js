@@ -2,12 +2,14 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import './Characters.css'
 import Character from './Character/Character'
+import LoadingGif from '../../../Assets/LoadingGif/Loading'
 
 class Characters extends Component{
 
     state = {
         repeat : true,
-        Characters  :[]
+        Characters  :[],
+        loading : true
     }
 
     getCharacters = () => {
@@ -19,18 +21,19 @@ class Characters extends Component{
                     })
                     this.setState({
                         repeat : false,
-                        Characters : characters
+                        Characters : characters,
+                        loading : false
                     })
                 })
                 .catch(err => console.log(err))
     }
 
     render(){
-
+        let Data,data
         if(this.state.repeat){
             this.getCharacters();
         }
-        let data = this.state.Characters.map(data => {
+        data = this.state.Characters.map(data => {
             // console.log(data)
             return (
                         <Character
@@ -41,8 +44,15 @@ class Characters extends Component{
                         />
             )
         })
+        if(this.state.loading){
+            Data = <LoadingGif/>
+        }else{
+            Data = (
+                <div className="CardForCharacters">{data}</div>
+            )
+        }
         return (
-            <div className="CardForCharacters">{data}</div>
+            <div>{Data}</div>
         )
     }
 }

@@ -2,12 +2,14 @@ import React, { Component } from 'react'
 import './Quotes.css'
 import axios from 'axios'
 import Quote from './Quote/Quote'
+import LoadingGif from '../../../Assets/LoadingGif/Loading'
 
 class Quotes extends Component{
 
     state = {
         repeat : true,
-        data : []
+        data : [],
+        loading : true
     }
 
     getQuotes = () => {
@@ -15,18 +17,20 @@ class Quotes extends Component{
         .then(res => {
             this.setState({
                     repeat : false,
-                    data : res.data
+                    data : res.data,
+                    loading : false
                 })
         })
         .catch(err =>  console.log(err))
     }
 
     render(){
+        let Data,quotes
         if(this.state.repeat){
             this.getQuotes()
         }
 
-        let quotes = this.state.data.map(quote => {
+        quotes = this.state.data.map(quote => {
             return (
                 <Quote
                     Author = {quote.author}
@@ -34,12 +38,20 @@ class Quotes extends Component{
                     />
             )
         })
-
-        return(
-            <div className="QuotesDisplayPage">
+        if(this.state.loading){
+            Data = <LoadingGif/>
+        }else{
+            Data =(
+                <div className="QuotesDisplayPage">
                 <div className="QuotesSectionOfNavBar">
                     {quotes}
                 </div>
+            </div>
+            )
+        }
+        return(
+            <div>
+                {Data}
             </div>
         )
     }

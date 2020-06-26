@@ -9,7 +9,8 @@ class QuotesSection extends Component{
     state = {
         repeat: true,
         Quotes : [],
-        Author : []
+        Author : [],
+        loading : true
     }
 
     getQuotes = () => {
@@ -24,7 +25,8 @@ class QuotesSection extends Component{
                     this.setState({
                             repeat : false,
                             Quotes: [...parsedquotes],
-                            Author : [...parsedquotesauthor]
+                            Author : [...parsedquotesauthor],
+                            loading : false
                         })
                 })
                 .catch(err =>  console.log(err))
@@ -34,8 +36,12 @@ class QuotesSection extends Component{
         if(this.state.repeat){
             this.getQuotes()
         }
-        return(
-            <Aux>
+        let Data
+        if(this.state.loading){
+            Data = ""
+        }else{
+            Data = (
+                <div>
                 <div className="QuotesSection">
                     <p className="quotesSectionTitle">famous quotes</p>
                     <div className="quotesSectionCard">
@@ -60,6 +66,12 @@ class QuotesSection extends Component{
                     </p>
                 </div>
                 <Route path="/quotes" component={Quotes}/>
+                </div>
+            )
+        }
+        return(
+            <Aux>
+                {Data}
             </Aux>
         )
     }

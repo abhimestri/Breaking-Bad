@@ -12,7 +12,8 @@ class MoreCharactersSection extends Component{
         Characters : [],
         Nickname : [],
         CharacterImage : [],
-        Occupation : []
+        Occupation : [],
+        loading : true
     }
 
     getData = () => {
@@ -36,7 +37,8 @@ class MoreCharactersSection extends Component{
                     Characters : characters,
                     CharacterImage : characterImage,
                     Nickname : nicknames,
-                    Occupation : occupations
+                    Occupation : occupations,
+                    loading : false
                 })
 
                 })
@@ -48,8 +50,12 @@ class MoreCharactersSection extends Component{
         if(this.state.repeat){
             this.getData();
         }
-        return (
-            <Aux>
+        let Data
+        if(this.state.loading){
+            Data =""
+        }else{
+            Data = (
+                <div>
                 <div className="moreCharactersBlock">
                     <div className="headerForMoreCharacterSection">
                             <h1 className="title">More characters</h1>
@@ -85,6 +91,12 @@ class MoreCharactersSection extends Component{
                     </div>
                 </div>
                 <Route path="/Characters" exact component={Characters}/>
+                </div>
+            )
+        }
+        return (
+            <Aux>
+                {Data}
             </Aux>
         )
     }

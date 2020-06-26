@@ -2,12 +2,14 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import './Episodes.css'
 import Episode from './Episode/Episode'
+import LoadingGif from '../../../Assets/LoadingGif/Loading'
 
 class Episodes extends Component{
 
     state = {
         repeat : true,
-        data : []
+        data : [],
+        loading : true
     }
 
     getEpisodes = () => {
@@ -15,17 +17,18 @@ class Episodes extends Component{
                 .then(res => {
                     this.setState({
                         repeat : false,
-                        data : res.data
+                        data : res.data,
+                        loading :false
                     })})
                 .catch(err => console.log(err))
     }
 
     render(){
-        let Data
+        let data ,Data
         if(this.state.repeat){
             this.getEpisodes()
         }
-        Data = this.state.data.map(episode => {
+        data = this.state.data.map(episode => {
             return (
                 <Episode
                     Title = {episode.title}
@@ -35,8 +38,15 @@ class Episodes extends Component{
                     />
             )
         })
+        if(this.state.loading){
+            Data = <LoadingGif/>
+        }else{
+            Data =(
+                <div className="CardForEPisodeDisplay">{data}</div>
+            )
+        }
         return(
-        <div className="CardForEPisodeDisplay">{Data}</div>
+            <div>{Data}</div>
         )
     }
 }

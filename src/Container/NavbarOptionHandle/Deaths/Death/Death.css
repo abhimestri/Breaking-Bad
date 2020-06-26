@@ -6,7 +6,7 @@
 }
 .Death{
     font-size: 28px;
-    font-weight: 100;
+    font-weight: 500;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .Cause{
@@ -36,7 +36,7 @@
     }
 }
 
-@media(max-width:768px){
+@media(max-width:769px){
     .cardForEachDeathSection{
         margin: 3.5vh;
       padding: 20px;

@@ -2,12 +2,14 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import './Deaths.css'
 import Death from './Death/Death'
+import LoadingGif from '../../../Assets/LoadingGif/Loading'
 
 class Deaths extends Component{
 
     state = {
         repeat: true,
-        data : []
+        data : [],
+        loading : true
     }
 
     getDeaths = () => {
@@ -15,7 +17,8 @@ class Deaths extends Component{
             .then(res => {
                 this.setState({
                     repeat :false,
-                    data : res.data
+                    data : res.data,
+                    loading : false
                 })
                 console.log(res)
             })
@@ -23,11 +26,11 @@ class Deaths extends Component{
     }
 
     render(){
-
+        let data, Data
         if(this.state.repeat){
             this.getDeaths()
         }
-        let data  = this.state.data.map(death => {
+        data = this.state.data.map(death => {
             return (
                 <Death
                     Deathof = {death.death}
@@ -39,9 +42,15 @@ class Deaths extends Component{
                 />
             )
         })
-
+        if(this.state.loading){
+            Data = <LoadingGif/>
+        }else{
+            Data =(
+                <div className="DeathsSection">{data}</div>
+            )
+        }
         return(
-            <div className="DeathsSection">{data}</div>
+            <div>{Data}</div>
         )
     }
 }

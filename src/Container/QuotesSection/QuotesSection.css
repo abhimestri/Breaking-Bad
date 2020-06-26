@@ -13,7 +13,7 @@
 }
 .QuotesSection::before{
     border-top: 1px solid #000;
-    top: 63em;
+    top: 60em;
     left: 7em;
     right: 7em;
     transform: scale(0,1);
@@ -62,7 +62,7 @@
         bottom: -63em;
     }
 }
-@media(max-width:768px){
+@media(max-width:769px){
     .QuotesSection{
         margin-top: 60vh;
         margin-left: 2vh;
