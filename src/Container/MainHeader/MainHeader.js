@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import './MainHeader.css'
+import SideDrawer from '../UI/SideDrawer/SideDrawer'
 import LoadingGif from '../../Assets/LoadingGif/Loading'
 
 class MainHeader extends Component{
@@ -55,38 +56,41 @@ class MainHeader extends Component{
         }else{
             Data = (
 
-            <div className="MainHeaderSection">
-            <div className="headerSection">
-                <h2 className="HeaderQuote"> ~{this.state.headerQuote}</h2>
-                <img  className="HeaderImg" src={this.state.headerImg} alt =""/>
-            </div>
-            <div className="mainSectionDisplay">
-                    <div className="cardForImg">
-                        <img className="image" src={parsedImg[1]} alt=""/>
-                        <div className="cardText">
-                            <h2 className="cardTextHeader">{parsedName[1]}</h2>
-                            <p className="cardTextSubHeader">{parsedNickname[1]}</p>
-                            <p className="cardTextContent">{parsedOccupation[1]}</p>
-                        </div>
+                <div className="MainHeaderSection">
+                    <div className="SideDrawer">
+                        <SideDrawer/>
                     </div>
-                    <div className="cardForImg">
-                        <img className="image" src={parsedImg[2]} alt=""/>
-                        <div className="cardText">
-                            <h2 className="cardTextHeader">{parsedName[2]}</h2>
-                            <p className="cardTextSubHeader">{parsedNickname[2]}</p>
-                            <p className="cardTextContent">{parsedOccupation[2]}</p>
-                        </div>
+                    <div className="headerSection">
+                        <h2 className="HeaderQuote"> ~{this.state.headerQuote}</h2>
+                        <img  className="HeaderImg" src={this.state.headerImg} alt =""/>
                     </div>
-                    <div className="cardForImg">
-                        <img className="image" src={parsedImg[4]} alt=""/>
-                        <div className="cardText">
-                            <h2 className="cardTextHeader">{parsedName[4]}</h2>
-                            <p className="cardTextSubHeader">{parsedNickname[4]}</p>
-                            <p className="cardTextContent">{parsedOccupation[4]}</p>
-                        </div>
+                    <div className="mainSectionDisplay">
+                            <div className="cardForImg">
+                                <img className="image" src={parsedImg[1]} alt=""/>
+                                <div className="cardText">
+                                    <h2 className="cardTextHeader">{parsedName[1]}</h2>
+                                    <p className="cardTextSubHeader">{parsedNickname[1]}</p>
+                                    <p className="cardTextContent">{parsedOccupation[1]}</p>
+                                </div>
+                            </div>
+                            <div className="cardForImg">
+                                <img className="image" src={parsedImg[2]} alt=""/>
+                                <div className="cardText">
+                                    <h2 className="cardTextHeader">{parsedName[2]}</h2>
+                                    <p className="cardTextSubHeader">{parsedNickname[2]}</p>
+                                    <p className="cardTextContent">{parsedOccupation[2]}</p>
+                                </div>
+                            </div>
+                            <div className="cardForImg">
+                                <img className="image" src={parsedImg[4]} alt=""/>
+                                <div className="cardText">
+                                    <h2 className="cardTextHeader">{parsedName[4]}</h2>
+                                    <p className="cardTextSubHeader">{parsedNickname[4]}</p>
+                                    <p className="cardTextContent">{parsedOccupation[4]}</p>
+                                </div>
+                            </div>
                     </div>
-            </div>
-        </div>
+                </div>
             )
         }
 

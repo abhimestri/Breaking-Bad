@@ -37,3 +37,10 @@
   transform-origin: 0 0; /* see note above */
 }
 .ldio-5pidom9eowm div { box-sizing: content-box; }
+
+@media(max-width:380px){
+  .Loading{
+    left: 21%;
+    top: -70%;
+  }
+}

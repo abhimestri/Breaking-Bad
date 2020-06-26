@@ -10,3 +10,8 @@
         height: 70px;
     }
 }
+@media(max-width:380px){
+    .Branding{
+        display: none;
+    }
+}

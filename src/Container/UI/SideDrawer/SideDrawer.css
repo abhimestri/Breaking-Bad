@@ -1,0 +1,12 @@
+.SideDrawerBtn{
+    position: absolute;
+    top: 2%;
+    left: 2.5%;
+    cursor: pointer;
+}
+.eachLine{
+    margin-bottom: 5px;
+    background-color: white;
+    width: 30px;
+    height: 3px;
+}
