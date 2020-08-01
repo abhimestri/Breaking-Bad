@@ -1,5 +1,5 @@
 import React from 'react'
-import {Route} from 'react-router-dom'
+import {Route , Link} from 'react-router-dom'
 import './Navigations.css'
 import RoundUp from '../../Container/RoundUp'
 import BrandName from '../Branding/BrandName'
@@ -14,11 +14,11 @@ const Navbar = (props) => {
             <BrandName/>
             <div className="NavbarSec">
                 <ul className="list-elements">
-                    <li className="listEle"><a className="li-item" href="/">Home</a></li>
-                    <li className="listEle"><a className="li-item" href="/Characters">Character</a></li>
-                    <li className="listEle"><a className="li-item" href="/Episodes">Episodes</a></li>
-                    <li className="listEle"><a className="li-item" href="/Quotes">Quotes</a></li>
-                    <li className="listEle"><a className="li-item" href="/Deaths">Deaths</a></li>
+                    <li className="listEle"><Link className="li-item" to="/">Home</Link></li>
+                    <li className="listEle"><Link className="li-item" to="/Characters">Character</Link></li>
+                    <li className="listEle"><Link className="li-item" to="/Episodes">Episodes</Link></li>
+                    <li className="listEle"><Link className="li-item" to="/Quotes">Quotes</Link></li>
+                    <li className="listEle"><Link className="li-item" to="/Deaths">Deaths</Link></li>
                 </ul>
             </div>
             <Route path="/" exact component={RoundUp} />
